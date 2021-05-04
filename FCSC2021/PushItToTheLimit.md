@@ -32,7 +32,7 @@ test " OR 1=1 -- -
 
 Notre requête fonctionne ! Cependant, le serveur refuse d'afficher autant de données. On va alors adapter nos requêtes afin de faire un peu de tri. 
 
-                    ![alt text](https://github.com/AnthoLaMalice/CTF-Writeups/blob/main/FCSC2021/pictures/pushit2.PNG)
+![alt text](https://github.com/AnthoLaMalice/CTF-Writeups/blob/main/FCSC2021/pictures/pushit2.PNG)
 
 Afin de faire un peu de tri, nous allons utiliser la commande UNION. 
 
@@ -58,7 +58,7 @@ test " UNION SELECT 1,2 -- -
 
 Et le flag s'affiche directement.
 
-![alt text](https://github.com/AnthoLaMalice/CTF-Writeups/blob/main/FCSC2021/pictures/pushit4.PNG)
+![alt text](https://github.com/AnthoLaMalice/CTF-Writeups/blob/main/FCSC2021/pictures/pushit4.png)
 
 ### Sources & Aides :
 

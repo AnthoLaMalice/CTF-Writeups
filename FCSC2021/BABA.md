@@ -12,7 +12,7 @@ Le flag est au format FCSC{}.
 
 On commence par ouvrir le fichier sur Audacity, le format du fichier n'étant pas reconnu directement, on l'ouvre via File &gt; Import &gt; Raw Data, on modifie le sample rate pour correspondre à l'énoncé -&gt; 200000. Après une première écoute du son, rien ne saute aux yeux. On réfléchit alors aux techniques basiques dans ce genre de challenge. En ralentissant le son on commence à entendre des bruits audibles qui ressemblent fortement à du Morse. On zoom alors un bon coup, surprise, on peut observer des petites barres et des barres un peu plus longues, toutes de même taille, c'est donc bel et bien du Morse.
 
-![](.gitbook/assets/image%20%2812%29.png)
+![](.https://github.com/AnthoLaMalice/CTF-Writeups/blob/main/FCSC2021/pictures/BABA%201.PNG)
 
 ### Résolution
 

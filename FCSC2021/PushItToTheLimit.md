@@ -22,7 +22,7 @@ En ouvrant le code source de la page, on se rend compte que la requête envoyée
 
 On se rend alors rapidement compte que le champs username est entouré de **"** et non pas de **'**
 
-![](https://gblobscdn.gitbook.com/assets%2F-MZdTbgYejVWYMckaOtH%2F-MZliKkARzgMSXKOWdnq%2F-MZljCNWiTbDqh8-Jgy6%2Fpushit1.PNG?alt=media&token=8b0d5ba4-b4ef-429f-af79-82919fd1eef0)
+![alt text](https://github.com/AnthoLaMalice/CTF-Writeups/blob/main/FCSC2021/pictures/pushit1.PNG)
 
 On adapte alors notre requête :
 
@@ -32,7 +32,7 @@ test " OR 1=1 -- -
 
 Notre requête fonctionne ! Cependant, le serveur refuse d'afficher autant de données. On va alors adapter nos requêtes afin de faire un peu de tri. 
 
-![alt text](https://github.com/AnthoLaMalice/CTF-Writeups/blob/main/FCSC2021/pictures/pushit1.PNG)
+![alt text](https://github.com/AnthoLaMalice/CTF-Writeups/blob/main/FCSC2021/pictures/pushit2.PNG)
 
 Afin de faire un peu de tri, nous allons utiliser la commande UNION. 
 
@@ -48,7 +48,7 @@ test " ORDER BY 5 -- -
 
 Même pas besoin de chercher plus loin, le serveur nous retourne directement qu'il n'y a que 2 colonnes à afficher. Il ne reste alors plus qu'à afficher ces dernières ! 
 
-![alt text](https://github.com/AnthoLaMalice/CTF-Writeups/blob/main/FCSC2021/pictures/pushit2.PNG)
+![alt text](https://github.com/AnthoLaMalice/CTF-Writeups/blob/main/FCSC2021/pictures/pushit3.PNG)
 
 ```text
 test " UNION SELECT 1,2 -- -
@@ -58,7 +58,7 @@ test " UNION SELECT 1,2 -- -
 
 Et le flag s'affiche directement.
 
-![alt text](https://github.com/AnthoLaMalice/CTF-Writeups/blob/main/FCSC2021/pictures/pushit3.PNG)
+![alt text](https://github.com/AnthoLaMalice/CTF-Writeups/blob/main/FCSC2021/pictures/pushit4.PNG)
 
 ### Sources & Aides :
 

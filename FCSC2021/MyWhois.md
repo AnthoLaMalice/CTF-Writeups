@@ -16,7 +16,7 @@ Petit rappel, "whois" permet d'interroger des base de données à propos du nom 
 
 On remarque alors très vite que l'input que nous envoyons n'est pas vérifié permettant ainsi de l'exploiter à notre guise. 
 
-On pense alors tout de suite au "  ;  " qui, sur un système Linux, permet d'exécuter deux ou plusieurs commandes les unes après les autres, peu importe le résultat de la dernière. 
+On pense alors tout de suite au "  ;  " qui, sur un système Linux, permet d'exécuter deux ou plusieurs commandes les unes après les autres, peu importe le résultat de la précédente. 
 
 ### Résolution
 

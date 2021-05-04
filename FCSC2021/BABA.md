@@ -18,7 +18,7 @@ On commence par ouvrir le fichier sur Audacity, le format du fichier n'étant pa
 
 On prend notre tableau de conversion. 
 
-![](.gitbook/assets/image%20%287%29.png)
+![alt text](https://github.com/AnthoLaMalice/CTF-Writeups/blob/main/FCSC2021/pictures/International_Morse_Code-fr.svg.png)
 
 Après avoir décodé les premiers caractères, nous trouvons ceci :
 

@@ -33,6 +33,7 @@ Nous parvenons à lister le contenu du répertoire courant.
 On voit alors tout de suite que le fichier index.php qui contient le code source de la page est présent dans le répertoire courant. Il ne reste alors plus qu'à afficher le contenu de celui-ci. 
 
 ![alt text](https://github.com/AnthoLaMalice/CTF-Writeups/blob/main/FCSC2021/pictures/mywhois4.PNG)
+
 En observant le code source de la page on trouve directement le flag. 
 
 ### Flag 

@@ -68,10 +68,13 @@ for i in range(1000):
 ```
 
 We run it and we can see that procorp is running on different pids. 
+
 ![](https://i.imgur.com/g1VV0KZ.png)
+
 Let's choose one and include its command line arguments.
 `http://52.50.60.154/index.php?p=../../../../../../../../../../../proc/7/cmdline%00`
 And the flag is there :)
+
 ![](https://i.imgur.com/hLThpz2.png)
 
 

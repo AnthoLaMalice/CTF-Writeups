@@ -10,11 +10,16 @@ We can't find anything really interesting on the website, except for a Guide pag
 ![](https://i.imgur.com/JzOBzSH.png)
 
 Looking at the pastebin URL, we obviously find a fake flag. From here we can see that the flag is set by passing it as an argument to the process manager with the f option.
+
 We can also see that the URL of this Guide webpage is included as follows.
 `52.50.60.154/index.php?p=guide`
+
 From this point on, we can think of a classic LFI attack.
+
 As the main file for the website is `index.php`, it appears that `.php` is added to the file name passed to the `?p` parameter. To get around this, we need to add a null byte (`%00`) to the file we are trying to include.
+
 So let's start by trying to include the other files that already exist.
+
 `http://52.50.60.154/index.php?p=../html/pricing` (.php is appended to pricing to include pricing.php)
 ![](https://i.imgur.com/E03Dggl.png)
 Here we can see two things:

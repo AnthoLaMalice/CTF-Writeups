@@ -41,7 +41,7 @@ https://tldp.org/LDP/Linux-Filesystem-Hierarchy/html/proc.html
 /proc/PID/stat
 
 > Process status.
-> /proc/PID/stat files also display the name of the process
+> /proc/PID/stat files also displays the name of the process
 
 /proc/PID/cmdline
 

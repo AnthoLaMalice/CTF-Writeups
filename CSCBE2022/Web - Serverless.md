@@ -21,11 +21,15 @@ If it is executed and the output is 49, then a SSTI is indeed possible.
 ![](https://i.imgur.com/NXcxqJv.png)
 
 And indeed it is, now we need to find out what type of template is running. To do it, we used this documentation : 
+
 https://book.hacktricks.xyz/pentesting-web/ssti-server-side-template-injection
+
 But we never managed to find out which template was used.
 Looking again at the website and Serverless, we started to think that it might just be JavaScript.. So we searched for Templates used with Javascript and we came accross Handlebars.
 While searching for documentation on this subject, we came across this blogpost.
+
 http://mahmoudsec.blogspot.com/2019/04/handlebars-template-injection-and-rce.html
+
 In this blogpost, he tried to include the environment variables that leaked the AWS secret keys. Let's try this.
 
 ![](https://i.imgur.com/ZQzi32h.png)
@@ -82,6 +86,7 @@ Message: {
   "_X_AMZN_TRACE_ID": "Root=1-622dc611-7ab5631e74fb19b07704db6a;Parent=7d97fce66c8f21bc;Sampled=0"
 }
 ```
+
 Now that we have our AWS secret key, sessions token and access key leaked, we can connect to the instance. In order to do this, we had to read a lot of documentation and came accross a tool named Pacu.
 
 https://github.com/RhinoSecurityLabs/pacu
@@ -114,6 +119,7 @@ Next, we need to create our session and enter our keys.
 - And the session token to AWS_SESSION_TOKEN
 
 Now we can use the module `iam__enum_users_roles_policies_groups` which allows us to list the different roles available.
+
 https://rhinosecuritylabs.com/aws/escalating-aws-iam-privileges-undocumented-codestar-api/
 
 ![](https://i.imgur.com/cPd2NYr.png)

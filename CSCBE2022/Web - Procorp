@@ -18,6 +18,7 @@ So let's start by trying to include the other files that already exist.
 `http://52.50.60.154/index.php?p=../html/pricing` (.php is appended to pricing to include pricing.php)
 ![](https://i.imgur.com/E03Dggl.png)
 Here we can see two things:
+
 - We are probably in the /var/www/html directory
 - The LFI works
 
@@ -65,6 +66,7 @@ for i in range(1000):
 		a = a.split("Umask")
 		print(a[0])
 ```
+
 We run it and we can see that procorp is running on different pids. 
 ![](https://i.imgur.com/g1VV0KZ.png)
 Let's choose one and include its command line arguments.

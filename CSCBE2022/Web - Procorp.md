@@ -77,7 +77,7 @@ for i in range(1000):
 		print(a[0])
 ```
 
-We run it and we can see that procorp is running on different pids. 
+We run it and we can see that procorp is running under different pids. 
 
 ![](https://i.imgur.com/g1VV0KZ.png)
 

@@ -69,7 +69,7 @@ for i in range(1000):
 	a = requests.get(url+str(i)+"/status%00")
 	print("testing : ", i)
 	
-	if "Quickly manage your processes!" not in a.text:
+	if "Quickly manage your processes!" not in a.text: #dirty check to see if the file gets included
 		a = str(a.content)
 		a = a.split("Name:")
 		a = a[1]

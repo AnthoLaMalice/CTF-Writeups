@@ -21,6 +21,7 @@ As the main file for the website is `index.php`, it appears that `.php` is added
 So let's start by trying to include the other files that already exist.
 
 `http://52.50.60.154/index.php?p=../html/pricing` (.php is appended to pricing to include pricing.php)
+
 ![](https://i.imgur.com/E03Dggl.png)
 Here we can see two things:
 
@@ -30,6 +31,7 @@ Here we can see two things:
 Let's continue by trying to include classic files such as /etc/passwd
 
 `http://52.50.60.154/index.php?p=../../../../../../../../../../../etc/passwd%00` (remember about the null byte so that the .php extension is not added)
+
 ![](https://i.imgur.com/2cKwXpI.png)
 
 We are not allowed to include files from the /etc directory.
@@ -53,6 +55,7 @@ https://tldp.org/LDP/Linux-Filesystem-Hierarchy/html/proc.html
 Let's try it.
 
 `http://52.50.60.154/index.php?p=../../../../../../../../../../../proc/1/status%00`
+
 ![](https://i.imgur.com/Oy2ZvNW.png)
 
 From here we can see that the name of the first process is `entrypoint.sh`. But let's see if we can find a more interesting process. To do this, we'll create a quick and dirty script that looks at the status of all the pids.

@@ -21,11 +21,15 @@ If it is executed and the output is 49, then a SSTI is indeed possible.
 ![](https://i.imgur.com/NXcxqJv.png)
 
 And indeed it is, now we need to find out what type of template is running. To do it, we used this documentation : 
+
 https://book.hacktricks.xyz/pentesting-web/ssti-server-side-template-injection
+
 But we never managed to find out which template was used.
 Looking again at the website and Serverless, we started to think that it might just be JavaScript.. So we searched for Templates used with Javascript and we came accross Handlebars.
 While searching for documentation on this subject, we came across this blogpost.
+
 http://mahmoudsec.blogspot.com/2019/04/handlebars-template-injection-and-rce.html
+
 In this blogpost, he tried to include the environment variables that leaked the AWS secret keys. Let's try this.
 
 ![](https://i.imgur.com/ZQzi32h.png)
